@@ -1,0 +1,131 @@
+#root {
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('images/pattern-bg-desktop.png') top no-repeat;
+  background-size: 100rem;
+
+}
+
+.map {
+    width: 100vw;
+    height: 30rem;
+    z-index: 1;
+    bottom: 0;
+}
+
+input.ip-input{
+  background: white;
+    border: none;
+    height: 0rem;
+    width: 37rem;
+    border-radius: 20px 0 0 20px;
+    color: black;
+    padding: 2rem 1rem;
+    font-size: 21px;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.ip-info-container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: start;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 65rem;
+  margin: 2rem auto -6rem auto;
+  position: relative;
+  z-index: 2;
+  height: 7rem;
+}
+.input-btn-container{
+  display: flex;
+  justify-content: center;
+}
+h4{
+  opacity: .7;
+}
+
+.submit-button{
+  background: black;
+  border-radius: 0 20px 20px 0;
+}
+
+.alert_window{
+  position: absolute; 
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background: white; 
+  /* height: 10rem;  */
+  /* width: 20rem;  */
+  border-radius: 20px;
+  color: black;
+  z-index: 99;
+  padding: 1rem 2rem;
+}
+/* 
+.alert_window::before{
+  content: '';
+  position: absolute;
+  z-index: -99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black; 
+  opacity: .4;
+  height: 100vh;
+  width: 100vw;
+} */
+
+.ip-info-subcontainer{
+  min-width: 10rem;
+}
